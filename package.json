@@ -1,0 +1,17 @@
+{
+  "name": "cekasa",
+  "version": "1.0.0",
+  "description": "CE Integration to Kasa Light controls",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "jsxapi": "^4.3.2",
+    "kasa_control": "^0.1.0",
+    "ws": "^7.1.2"
+  }
+}
