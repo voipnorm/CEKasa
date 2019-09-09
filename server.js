@@ -6,12 +6,13 @@ const TPXapi = require('./endpoint');
 const KasaControl = require('kasa_control');
 const kasa = new KasaControl();
 
+//Video endpoint object
 var endpoint = {
     username: process.env.TPADMIN,
     password: process.env.TPADMINPWD,
     ipAddress: process.env.IPADDRESS,
 }
-
+//Kasa cloud required variables
 const email = process.env.KASAEMAIL;
 
 const password = process.env.KASAPASSWORD;
@@ -29,6 +30,7 @@ tp.on('status', (report) => {
             lights(false);
         }
     }else{
+        //Dimmer still to be done
         if(report.status === 'increment'){
             console.log("dimmer up");
             //to be done

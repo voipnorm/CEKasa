@@ -1,4 +1,4 @@
-# Cisco Endpoint integraton for BusylightOmega
+# Cisco Endpoint integraton for Kasa Lights
 
 Webex Room Kit device integration for Kasa Light.
 
@@ -24,6 +24,15 @@ To download and install this project:
 
     git clone 
     npm install
+    
+Create a .env file with the following attributes
+
+    TPADMIN=<telepresence Admin user>
+    TPADMINPWD=<telepresence admin user password>
+    IPADDRESS=<video endpoint IP address>
+    KASAEMAIL=<kasa cloud account email address>
+    KASAPASSWORD=<kasa light password>
+    KASALIGHT=<Kasa light device ID to be controlled>
     
 ## License
 

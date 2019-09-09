@@ -35,6 +35,7 @@ module.exports = class TPXapi extends EventEmitter{
             (async () => {
                 await this.connect();
                 await this.onReady();
+                //Following not required for this project but part of a larger room controller project coming
                 /*await this.checkCallStatus();
                 await this.checkPeopleCount();
                 await this.checkPeoplePresence();
